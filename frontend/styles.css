@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+.app {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.task-form {
+  display: flex;
+  gap: 8px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-form button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background-color: #1d4ed8;
+}
+
+.error-message {
+  min-height: 1.2em;
+  margin: 8px 0 0;
+  color: #d93025;
+  font-size: 0.875rem;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.filters input,
+.filters select {
+  padding: 6px;
+  font-size: 0.875rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filters input {
+  flex: 1;
+  min-width: 120px;
+}
+
+.task-list {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.task-list li:last-child {
+  border-bottom: none;
+}
+
+.task-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.task-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.task-title {
+  flex: 1;
+  min-width: 100px;
+  word-break: break-word;
+}
+
+.task-description {
+  flex-basis: 100%;
+  color: #666;
+  font-size: 0.875rem;
+  word-break: break-word;
+}
+
+.status-select,
+.priority-select,
+.due-date-input {
+  padding: 4px;
+  font-size: 0.875rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.overdue-badge {
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  background-color: #fdeceb;
+  color: #d93025;
+}
+
+.edit-title-input {
+  flex: 1;
+  min-width: 100%;
+  padding: 6px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-description-input {
+  flex-basis: 100%;
+  min-height: 60px;
+  padding: 6px;
+  font-size: 0.875rem;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.edit-btn,
+.save-btn,
+.cancel-btn,
+.delete-btn {
+  padding: 6px 10px;
+  font-size: 0.875rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.delete-btn {
+  border-color: #d93025;
+  color: #d93025;
+}
+
+.edit-btn:hover,
+.save-btn:hover,
+.cancel-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.delete-btn:hover {
+  background-color: #fdeceb;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Flow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Task Flow</h1>
+
+    <form id="task-form" class="task-form">
+      <input
+        type="text"
+        id="title-input"
+        placeholder="할 일 제목을 입력하세요"
+        maxlength="100"
+        autocomplete="off"
+      >
+      <button type="submit">등록</button>
+    </form>
+    <p id="error-message" class="error-message" role="alert"></p>
+
+    <div class="filters">
+      <input
+        type="search"
+        id="search-input"
+        placeholder="제목 검색"
+        autocomplete="off"
+      >
+      <select id="status-filter">
+        <option value="ALL">전체 상태</option>
+        <option value="TODO">할 일</option>
+        <option value="DOING">진행 중</option>
+        <option value="DONE">완료</option>
+      </select>
+      <select id="priority-filter">
+        <option value="ALL">전체 우선순위</option>
+        <option value="HIGH">높음</option>
+        <option value="NORMAL">보통</option>
+        <option value="LOW">낮음</option>
+      </select>
+    </div>
+
+    <ul id="task-list" class="task-list"></ul>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
